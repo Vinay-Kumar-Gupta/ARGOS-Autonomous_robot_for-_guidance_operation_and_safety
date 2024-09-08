@@ -1,3 +1,5 @@
+# This is a Publisher Module for publishing goal_pose 
+# This Can be imported and used as a function directly by passing the argument
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
