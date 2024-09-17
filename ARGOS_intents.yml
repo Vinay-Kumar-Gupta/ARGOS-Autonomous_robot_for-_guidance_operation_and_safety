@@ -1,0 +1,28 @@
+context:
+  expressions:
+    room_navigate:
+      - $modes:mode mode $status:status
+      - (turn) $status:status $modes:mode mode
+      - (move to) room $pv.SingleDigitInteger:number_1
+        $pv.SingleDigitInteger:number_2 $pv.SingleDigitInteger:number_3
+  slots:
+    modes:
+      - first aid
+      - fire
+      - alert
+      - manual
+      - navigation
+      - tour
+    status:
+      - stop
+      - kill
+      - terminate
+      - off
+      - on
+    system_mode:
+      - logoff
+      - wakeup
+      - sleep
+      - restart
+      - shutdown
+  macros: {}
